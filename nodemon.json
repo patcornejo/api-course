@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "app"
+    ],
+    "ignore": [
+        ".git",
+        "node_modules/**/node_modules"
+    ],
+    "ext": "ts,js,json",
+    "exec": "TS_NODE_TRANSPILE_ONLY=true TS_NODE_PROJECT=app/tsconfig.json node --inspect -r tsconfig-paths/register -r ts-node/register app/app.ts"
+}
